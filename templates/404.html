@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found - NAR Industry{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="hero-content text-center">
+            <h1 class="hero-title">404</h1>
+            <p class="hero-subtitle">
+                Page Not Found
+            </p>
+            <div class="mt-8">
+                <a href="{{ url_for('home') }}" class="cta-button">
+                    GO HOME <i class="fas fa-home ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

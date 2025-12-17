@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - NAR Industry{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                CONTACT<br>
+                <span class="highlight-text">NAR INDUSTRY</span>
+            </h1>
+            <p class="hero-subtitle">
+                Ready to bring your industrial projects to life? Get in touch with our experts for precision manufacturing solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="content-section light-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 mt-12">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3 class="text-2xl font-bold mb-6 text-primary-blue">Send Us a Message</h3>
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                            <input type="text" name="firstName" placeholder="Enter your first name" class="form-input" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                            <input type="text" name="lastName" placeholder="Enter your last name" class="form-input" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" name="email" placeholder="Enter your email address" class="form-input" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" name="phone" placeholder="Enter your phone number" class="form-input" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Service Required *</label>
+                        <select name="service" class="form-input" required>
+                            <option value="">Select Service Required</option>
+                            <option value="laser">Laser Cutting</option>
+                            <option value="press">Press Brake Forming</option>
+                            <option value="welding">Welding Services</option>
+                            <option value="machining">CNC Machining</option>
+                            <option value="shearing">Shearing Services</option>
+                            <option value="fabrication">Full Fabrication</option>
+                            <option value="consultation">Technical Consultation</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Details & Requirements *</label>
+                        <textarea name="message" placeholder="Please describe your project requirements, specifications, timeline, and any other relevant details..." class="form-input h-40" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button w-full">
+                        SEND MESSAGE <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Information -->
+            <div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary-blue mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-metal-accent text-xl mt-1"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-gray-900 font-semibold text-lg">Factory Address</div>
+                                    <div class="text-gray-600 mt-1">
+                                        Industrial Area, Dammam<br>
+                                        Eastern Province<br>
+                                        Kingdom of Saudi Arabia
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-phone text-metal-accent text-xl mt-1"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-gray-900 font-semibold text-lg">Phone Numbers</div>
+                                    <div class="text-gray-600 mt-1">
+                                        <a href="tel:+966131234567" class="hover:text-metal-accent">+966 13 123 4567</a> (Office)<br>
+                                        <a href="tel:+966551234567" class="hover:text-metal-accent">+966 55 123 4567</a> (Mobile)<br>
+                                        <a href="tel:+966509876543" class="hover:text-metal-accent">+966 50 987 6543</a> (Technical Support)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-envelope text-metal-accent text-xl mt-1"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-gray-900 font-semibold text-lg">Email Address</div>
+                                    <div class="text-gray-600 mt-1">
+                                        <a href="mailto:info@narindustry.com" class="hover:text-metal-accent">info@narindustry.com</a><br>
+                                        <a href="mailto:sales@narindustry.com" class="hover:text-metal-accent">sales@narindustry.com</a><br>
+                                        <a href="mailto:support@narindustry.com" class="hover:text-metal-accent">support@narindustry.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Hours -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <h4 class="text-xl font-bold text-primary-blue mb-4">Business Hours</h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Sunday - Thursday:</span>
+                                <span class="text-gray-900 font-semibold">7:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Friday:</span>
+                                <span class="text-gray-900 font-semibold">7:00 AM - 12:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Saturday:</span>
+                                <span class="text-gray-900 font-semibold">7:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="pt-3 border-t border-gray-300">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600">Emergency Service:</span>
+                                    <span class="text-metal-accent font-semibold">24/7 Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Response -->
+                    <div class="bg-gradient-to-r from-industrial-blue to-primary-blue rounded-xl p-6 text-white">
+                        <h4 class="text-xl font-bold mb-4">Quick Response Guarantee</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-metal-accent mr-3"></i>
+                                <span>Email responses within 2 hours</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-metal-accent mr-3"></i>
+                                <span>Phone calls answered immediately</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar text-metal-accent mr-3"></i>
+                                <span>Site visits scheduled within 24 hours</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-file-alt text-metal-accent mr-3"></i>
+                                <span>Quotes delivered within 48 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

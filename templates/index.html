@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block title %}NAR Industry - Industrial Manufacturing Solutions{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                INDUSTRIAL<br>
+                <span class="highlight-text">EXCELLENCE</span><br>
+                SINCE 2015
+            </h1>
+            <p class="hero-subtitle text-high-contrast">
+                Najma al Raqeeb for Industry delivers precision metal fabrication solutions 
+                with cutting-edge technology and unparalleled craftsmanship for the GCC region.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-8">
+                <a href="{{ url_for('services') }}" class="cta-button">
+                    OUR SERVICES <i class="fas fa-tools ml-2"></i>
+                </a>
+                <a href="{{ url_for('projects') }}" class="px-8 py-3 border-2 border-metal-accent text-metal-accent rounded-full font-semibold hover:bg-metal-accent hover:text-white transition-all duration-300">
+                    VIEW PROJECTS <i class="fas fa-arrow-up-right-from-square ml-2"></i>
+                </a>
+            </div>
+            
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">10+</div>
+                    <div class="text-gray-300">Years Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">500+</div>
+                    <div class="text-gray-300">Projects Completed</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">50+</div>
+                    <div class="text-gray-300">Clients Served</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">24/7</div>
+                    <div class="text-gray-300">Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="content-section light-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="section-title text-left">About NAR Industry</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-metal-accent to-industrial-red mb-8"></div>
+                <p class="content-text text-high-contrast">
+                    Founded in 2015, <strong>Najma al Raqeeb for Industry (NAR)</strong> has established itself 
+                    as a premier manufacturing establishment dedicated to industrial innovation 
+                    and excellence in the GCC region.
+                </p>
+                <p class="content-text text-high-contrast">
+                    Our enthusiastic team combines traditional craftsmanship with cutting-edge 
+                    technology, delivering superior quality metal fabrication solutions that 
+                    exceed client expectations. We specialize in precision engineering, custom 
+                    fabrication, and industrial manufacturing services.
+                </p>
+                
+                <div class="mt-8">
+                    <h4 class="text-xl font-bold mb-4 text-high-contrast">Key Achievements</h4>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> ISO 9001:2015 Certified Quality Management</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced Japanese & German Machinery</li>
+                        <li><i class="fas fa-check-circle"></i> 100% Quality Assurance Guaranteed</li>
+                        <li><i class="fas fa-check-circle"></i> Serving Major GCC Industrial Projects</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 Technical Support & Maintenance</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <!-- Industrial Image -->
+                <div class="mb-8">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Industrial Manufacturing Facility" 
+                         class="w-full h-64 object-cover rounded-xl shadow-lg">
+                </div>
+                
+                <div class="service-card floating">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="service-title">Our Vision & Mission</h3>
+                    <p class="text-gray-700 mb-4">
+                        To be the <strong>leading industrial manufacturing company</strong> in the GCC, 
+                        recognized for innovation, quality, and customer satisfaction. 
+                        We aim to revolutionize metal fabrication through continuous 
+                        technological advancement and skilled craftsmanship.
+                    </p>
+                    <p class="text-gray-700">
+                        Our mission is to provide <strong>precision-engineered solutions</strong> that 
+                        empower industries, enhance operational efficiency, and contribute 
+                        to regional industrial development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview Section -->
+<section id="services-preview" class="content-section light-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">
+            Comprehensive industrial solutions powered by advanced technology and expert engineering
+        </p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <!-- Laser Cutting -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Precision Laser Cutting" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3 class="service-title">Precision Laser Cutting</h3>
+                <p class="text-gray-700 mb-4">
+                    High-speed optical laser cutting using <strong>LCG 3015 Amada (Japan)</strong> 
+                    technology for maximum accuracy and efficiency up to 25mm thickness.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Max Thickness:</span>
+                        <span class="text-metal-accent font-semibold">25mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Bed Size:</span>
+                        <span class="text-metal-accent font-semibold">3000x1500mm</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Press Brake -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Press Brake Forming" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-compress-alt"></i>
+                </div>
+                <h3 class="service-title">Press Brake Forming</h3>
+                <p class="text-gray-700 mb-4">
+                    Advanced CNC press brake forming with precision angle control 
+                    for complex bending operations up to 4000mm length.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Capacity:</span>
+                        <span class="text-metal-accent font-semibold">250 Tons</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Accuracy:</span>
+                        <span class="text-metal-accent font-semibold">±0.1°</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Welding -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Certified Welding Services" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3 class="service-title">Certified Welding</h3>
+                <p class="text-gray-700 mb-4">
+                    Professional welding services including <strong>MIG, TIG, and ARC welding</strong> 
+                    by certified technicians following AWS D1.1 standards.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Standards:</span>
+                        <span class="text-metal-accent font-semibold">AWS D1.1</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Certification:</span>
+                        <span class="text-metal-accent font-semibold">ASME IX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="{{ url_for('services') }}" class="cta-button">
+                VIEW ALL SERVICES <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="content-section light-section py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="stat-card">
+                <div class="stat-number" data-count="99">99</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-count="500">500+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-count="50">50+</div>
+                <div class="stat-label">Active Clients</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-count="24">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

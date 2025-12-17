@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services - NAR Industry{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                OUR<br>
+                <span class="highlight-text">SERVICES</span>
+            </h1>
+            <p class="hero-subtitle">
+                Comprehensive industrial manufacturing solutions powered by advanced technology and expert engineering
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="content-section light-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Laser Cutting -->
+            <div class="service-card" id="laser">
+                <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Precision Laser Cutting Machine" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3 class="service-title">Precision Laser Cutting</h3>
+                <p class="text-gray-700 mb-4">
+                    High-speed optical laser cutting using <strong>LCG 3015 Amada (Japan)</strong> 
+                    technology for maximum accuracy and efficiency up to 25mm thickness.
+                </p>
+                <div class="space-y-2 mb-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Max Thickness:</span>
+                        <span class="text-metal-accent font-semibold">25mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Bed Size:</span>
+                        <span class="text-metal-accent font-semibold">3000x1500mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Materials:</span>
+                        <span class="text-metal-accent font-semibold">Steel, Aluminum, Stainless</span>
+                    </div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Precision cutting ±0.1mm tolerance</li>
+                    <li><i class="fas fa-check"></i> Clean edge finish, minimal post-processing</li>
+                    <li><i class="fas fa-check"></i> Complex geometries and intricate patterns</li>
+                    <li><i class="fas fa-check"></i> Fast turnaround times</li>
+                </ul>
+            </div>
+            
+            <!-- Press Brake -->
+            <div class="service-card" id="press">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Press Brake Forming Machine" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-compress-alt"></i>
+                </div>
+                <h3 class="service-title">Press Brake Forming</h3>
+                <p class="text-gray-700 mb-4">
+                    Advanced CNC press brake forming with precision angle control 
+                    for complex bending operations up to 4000mm length.
+                </p>
+                <div class="space-y-2 mb-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Capacity:</span>
+                        <span class="text-metal-accent font-semibold">250 Tons</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Bending Length:</span>
+                        <span class="text-metal-accent font-semibold">4000mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Accuracy:</span>
+                        <span class="text-metal-accent font-semibold">±0.1°</span>
+                    </div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> CNC controlled precision bending</li>
+                    <li><i class="fas fa-check"></i> Multiple bend angles in single setup</li>
+                    <li><i class="fas fa-check"></i> Consistent repeatability</li>
+                    <li><i class="fas fa-check"></i> Complex profile forming</li>
+                </ul>
+            </div>
+            
+            <!-- Welding -->
+            <div class="service-card" id="welding">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Professional Welding Services" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3 class="service-title">Certified Welding</h3>
+                <p class="text-gray-700 mb-4">
+                    Professional welding services including <strong>MIG, TIG, and ARC welding</strong> 
+                    by certified technicians following AWS D1.1 standards.
+                </p>
+                <div class="space-y-2 mb-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Standards:</span>
+                        <span class="text-metal-accent font-semibold">AWS D1.1</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Materials:</span>
+                        <span class="text-metal-accent font-semibold">All Metals</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Certification:</span>
+                        <span class="text-metal-accent font-semibold">ASME IX</span>
+                    </div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Certified welders (AWS/ASME)</li>
+                    <li><i class="fas fa-check"></i> All welding processes (MIG/TIG/ARC)</li>
+                    <li><i class="fas fa-check"></i> NDT testing available</li>
+                    <li><i class="fas fa-check"></i> Structural and precision welding</li>
+                </ul>
+            </div>
+            
+            <!-- Machining -->
+            <div class="service-card" id="machining">
+                <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="CNC Machining Operations" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="service-title">CNC Machining</h3>
+                <p class="text-gray-700 mb-4">
+                    Precision turning and milling operations with advanced CNC 
+                    lathe and milling machines for complex components.
+                </p>
+                <div class="space-y-2 mb-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Tolerance:</span>
+                        <span class="text-metal-accent font-semibold">±0.01mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Max Diameter:</span>
+                        <span class="text-metal-accent font-semibold">500mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Spindle Speed:</span>
+                        <span class="text-metal-accent font-semibold">8000 RPM</span>
+                    </div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> High precision machining</li>
+                    <li><i class="fas fa-check"></i> Complex geometries</li>
+                    <li><i class="fas fa-check"></i> Surface finishing services</li>
+                    <li><i class="fas fa-check"></i> Prototype to production runs</li>
+                </ul>
+            </div>
+            
+            <!-- Shearing -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3 class="service-title">Shearing Services</h3>
+                <p class="text-gray-700 mb-4">
+                    High-precision shearing of metal sheets with clean edges 
+                    and dimensional accuracy up to 12mm thickness.
+                </p>
+                <div class="space-y-2 mb-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Max Thickness:</span>
+                        <span class="text-metal-accent font-semibold">12mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Length:</span>
+                        <span class="text-metal-accent font-semibold">4000mm</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Blade Type:</span>
+                        <span class="text-metal-accent font-semibold">High-Speed Steel</span>
+                    </div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Clean, burr-free cuts</li>
+                    <li><i class="fas fa-check"></i> Accurate dimensional control</li>
+                    <li><i class="fas fa-check"></i> High-volume production</li>
+                    <li><i class="fas fa-check"></i> Material optimization</li>
+                </ul>
+            </div>
+            
+            <!-- Assembly -->
+            <div class="service-card" id="fabrication">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Fabrication and Assembly" 
+                     class="w-full h-48 object-cover rounded-lg mb-6">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="service-title">Fabrication & Assembly</h3>
+                <p class="text-gray-700 mb-4">
+                    Complete fabrication solutions from design to assembly 
+                    and quality inspection for any scale projects.
+                </p>
+                <div class="space-y-2 mb-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Project Size:</span>
+                        <span class="text-metal-accent font-semibold">Any Scale</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Quality Control:</span>
+                        <span class="text-metal-accent font-semibold">100% Inspection</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Delivery:</span>
+                        <span class="text-metal-accent font-semibold">On-Time</span>
+                    </div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Complete project management</li>
+                    <li><i class="fas fa-check"></i> Design and engineering support</li>
+                    <li><i class="fas fa-check"></i> Quality assurance testing</li>
+                    <li><i class="fas fa-check"></i> Installation and commissioning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
