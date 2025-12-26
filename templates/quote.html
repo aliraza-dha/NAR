@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}Request Quote - NAR Industry{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                REQUEST<br>
+                <span class="highlight-text">QUOTE</span>
+            </h1>
+            <p class="hero-subtitle">
+                Get a detailed quote for your industrial manufacturing project. Our experts will provide competitive pricing and timeline estimates.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Form Section -->
+<section class="content-section light-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="contact-form">
+            <h3 class="text-3xl font-bold mb-8 text-primary-blue text-center">Project Quote Request</h3>
+            <form id="quoteForm" class="space-y-6">
+                <!-- Company Information -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Company Name *</label>
+                        <input type="text" name="companyName" placeholder="Enter your company name" class="form-input" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Contact Person *</label>
+                        <input type="text" name="contactPerson" placeholder="Enter contact person name" class="form-input" required>
+                    </div>
+                </div>
+                
+                <!-- Contact Details -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" name="email" placeholder="Enter your email address" class="form-input" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" name="phone" placeholder="Enter your phone number" class="form-input" required>
+                    </div>
+                </div>
+                
+                <!-- Project Details -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Service Type *</label>
+                        <select name="serviceType" class="form-input" required>
+                            <option value="">Select Service Type</option>
+                            <option value="laser-cutting">Laser Cutting</option>
+                            <option value="press-brake">Press Brake Forming</option>
+                            <option value="welding">Welding Services</option>
+                            <option value="cnc-machining">CNC Machining</option>
+                            <option value="shearing">Shearing Services</option>
+                            <option value="fabrication">Complete Fabrication</option>
+                            <option value="assembly">Assembly Services</option>
+                            <option value="custom">Custom Project</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Timeline *</label>
+                        <select name="timeline" class="form-input" required>
+                            <option value="">Select Timeline</option>
+                            <option value="urgent">Urgent (1-2 weeks)</option>
+                            <option value="standard">Standard (3-4 weeks)</option>
+                            <option value="flexible">Flexible (1-2 months)</option>
+                            <option value="long-term">Long-term (3+ months)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Budget Range -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Budget Range (SAR)</label>
+                    <select name="budgetRange" class="form-input">
+                        <option value="">Select Budget Range (Optional)</option>
+                        <option value="under-10k">Under 10,000 SAR</option>
+                        <option value="10k-50k">10,000 - 50,000 SAR</option>
+                        <option value="50k-100k">50,000 - 100,000 SAR</option>
+                        <option value="100k-500k">100,000 - 500,000 SAR</option>
+                        <option value="over-500k">Over 500,000 SAR</option>
+                    </select>
+                </div>
+                
+                <!-- Project Description -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Project Details & Specifications *</label>
+                    <textarea name="projectDetails" placeholder="Please provide detailed information about your project including:
+- Material specifications
+- Dimensions and tolerances
+- Quantity required
+- Quality standards
+- Special requirements
+- Technical drawings (mention if available)" class="form-input h-48" required></textarea>
+                </div>
+                
+                <!-- File Upload Note -->
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">Technical Drawings & Documents</h4>
+                    <p class="text-gray-600 text-sm">
+                        For accurate quotes, please email technical drawings, CAD files, or specifications to: 
+                        <a href="mailto:quotes@narindustry.com" class="text-metal-accent font-semibold">quotes@narindustry.com</a>
+                    </p>
+                    <p class="text-gray-500 text-xs mt-2">
+                        Supported formats: PDF, DWG, DXF, STEP, IGES, JPG, PNG
+                    </p>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="cta-button w-full">
+                    SUBMIT QUOTE REQUEST <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+                
+                <!-- Response Time -->
+                <div class="text-center text-gray-600">
+                    <p class="text-sm">
+                        <i class="fas fa-clock text-metal-accent mr-2"></i>
+                        We will respond to your quote request within 24 hours
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="content-section dark-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title">Why Choose NAR Industry?</h2>
+        <p class="section-subtitle">
+            Competitive pricing, quality assurance, and on-time delivery guaranteed
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-metal-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-dollar-sign text-white text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">Competitive Pricing</h4>
+                <p class="text-gray-300">
+                    Best value for money with transparent pricing and no hidden costs
+                </p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-industrial-red rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-shield-alt text-white text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">Quality Guarantee</h4>
+                <p class="text-gray-300">
+                    100% quality assurance with ISO 9001:2015 certified processes
+                </p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-industrial-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-clock text-white text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">On-Time Delivery</h4>
+                <p class="text-gray-300">
+                    Committed to meeting deadlines with 100% on-time delivery record
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+    
+    // Send to API
+    fetch('/api/quote', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert(data.message);
+            this.reset();
+        } else {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Sorry, there was an error submitting your quote request. Please try again.');
+    });
+});
+</script>
+{% endblock %}
