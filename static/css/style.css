@@ -1,15 +1,21 @@
 :root {
-    --primary-blue: #0a2463;
-    --industrial-blue: #1e40af;
+    --primary-green: #006c35;
+    --dark-green: #004d26;
+    --light-green: #00873f;
+    --gold-accent: #c9a227;
+    --gold-light: #d4af37;
     --steel-gray: #4a5568;
-    --metal-accent: #f59e0b;
-    --industrial-red: #dc2626;
-    --dark-bg: #1a202c;
-    --light-bg: #f7fafc;
+    --dark-bg: #1a1a2e;
+    --darker-bg: #16213e;
+    --light-bg: #f8f9fa;
     --text-dark: #2d3748;
     --text-light: #f8fafc;
     --text-muted: #718096;
     --card-bg: #ffffff;
+    --primary-blue: #006c35;
+    --industrial-blue: #004d26;
+    --metal-accent: #c9a227;
+    --industrial-red: #c9a227;
 }
 
 * {
@@ -59,14 +65,14 @@ body {
     width: 100%;
     z-index: 1000;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    background: rgba(26, 32, 44, 0.95);
+    background: rgba(0, 77, 38, 0.95);
     backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.2);
 }
 
 .main-header.scrolled {
-    background: rgba(10, 36, 99, 0.98);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 60, 30, 0.98);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     padding: 10px 0;
 }
 
@@ -185,8 +191,50 @@ body {
     position: relative;
     overflow: hidden;
     padding-top: 100px;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, #1e3a8a 100%);
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
     color: var(--text-light);
+}
+
+/* Hero Background Slider */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 108, 53, 0.85) 0%, rgba(0, 77, 38, 0.9) 100%);
+}
+
+.hero-section .hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
@@ -309,7 +357,7 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--primary-blue);
+    color: var(--primary-green);
 }
 
 /* Service card text improvements */
@@ -328,7 +376,7 @@ body {
 
 /* Stats Section */
 .stats-section {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, #2d3748 100%);
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
     position: relative;
     overflow: hidden;
     color: var(--text-light);
@@ -344,7 +392,7 @@ body {
 .light-section .stat-number {
     font-size: 4rem;
     font-weight: 800;
-    background: linear-gradient(45deg, var(--metal-accent), var(--primary-blue));
+    background: linear-gradient(45deg, var(--gold-accent), var(--primary-green));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -394,7 +442,7 @@ body {
 }
 
 .dark-section {
-    background-color: var(--dark-bg);
+    background-color: var(--dark-green);
     color: var(--text-light);
 }
 
@@ -444,7 +492,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(10, 36, 99, 0.9), transparent);
+    background: linear-gradient(to top, rgba(0, 77, 38, 0.9), transparent);
     padding: 40px;
     transform: translateY(100px);
     transition: transform 0.5s ease;
@@ -483,7 +531,7 @@ body {
 
 /* Footer */
 .main-footer {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, #0a0a0a 100%);
+    background: linear-gradient(135deg, var(--dark-green) 0%, #001a0d 100%);
     position: relative;
     overflow: hidden;
     color: var(--text-light);
@@ -574,7 +622,7 @@ body {
     right: -100%;
     width: 300px;
     height: 100vh;
-    background: var(--dark-bg);
+    background: var(--dark-green);
     z-index: 2000;
     transition: right 0.4s ease;
     padding: 100px 30px;
@@ -622,7 +670,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--dark-bg);
+    background: var(--dark-green);
     display: flex;
     align-items: center;
     justify-content: center;

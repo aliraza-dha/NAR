@@ -255,4 +255,23 @@ document.addEventListener('DOMContentLoaded', function() {
 // Initialize everything when DOM loads
 document.addEventListener('DOMContentLoaded', () => {
     initThreeJS();
+    initHeroSlider();
 });
+
+// Hero Background Slider
+function initHeroSlider() {
+    const sliders = document.querySelectorAll('.hero-slider');
+    
+    sliders.forEach(slider => {
+        const slides = slider.querySelectorAll('.hero-slide');
+        if (slides.length <= 1) return;
+        
+        let currentSlide = 0;
+        
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 4000); // Change slide every 4 seconds
+    });
+}
